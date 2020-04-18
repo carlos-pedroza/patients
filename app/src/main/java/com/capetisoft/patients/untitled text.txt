@@ -1,0 +1,1 @@
+SELECT `users`.`IDUser` as users_IDUser, `users`.`Name` as users_Name, `users`.`LastName` as users_LastName, `users`.`Email` as users_Email, `students`.IDStudent as students_IDStudent FROM `users`, `students` WHERE `users`.`IDUser` = `students`.`IDUser` AND `students`.`IDClass` = 1 ORDER BY `users`.`Name`, `users`.`LastName`;

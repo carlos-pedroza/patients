@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda de Médico</string>
+    <string name="registerActivity">Registro</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="patientName">Pacientes</string>
+    <string name="patientLabel">Paciente</string>
+    <string name="login_correo">Su nombre</string>
+    <string name="login_password">Contraseña</string>
+    <string name="registerButton">Registrarse</string>
+    <string name="loginButton">INGRESAR</string>
+    <string name="recoverButton">Recuperar contraseña</string>
+    <string name="subtitleLogin">(registro requerido)</string>
+    <string name="rememberText">Recordar Contraseña</string>
+    <string name="registerTitle">Registrar servicio</string>
+    <string name="registerComment">Se debe configurar el acceso para iniciar con el servicio, para proteger su información. Deberá proporcionar su correo electrónico valido, y, definir una nueva contraseña, los cuales le servirán para ingresar a la aplicación en adelante.\nNota: Podrá compartir información entre dispositivos usando el mismo correo electrónico y contraseña (con conexión a Internet requerida).</string>
+    <string name="textFieldNameRegister">Nombre Completo (requerido)</string>
+    <string name="emailRegister">Correo electrónico (requerido)</string>
+    <string name="emailRegisterConfirm">Confirmar el Correo electrónico (requerido)</string>
+    <string name="passwordRegister">Contraseña (requerido)</string>
+    <string name="passwordRegisterConfirm">Confirmar Contraseña (requerido)</string>
+    <string name="language">2</string>
+    <string name="passwordNotEqual">La contraseña no coincide con su confirmación por favor revisar</string>
+    <string name="emailNotEqual">El correo no coincide con su confirmación por favor revisar</string>
+    <string name="messageRegisterDo">¡Realizando registro!</string>
+    <string name="messageRegisterDone">¡El registro fue exitoso!</string>
+    <string name="messageRegisterDoneNoSync">¡Se realizo el registro, pero no ha podido actualizarse en servidor de sincronización, necesaria conexión a datos!</string>
+    <string name="nameEmpty">El nombre es requerido</string>
+    <string name="emailEmpty">El correo es requerido</string>
+    <string name="passwordEmpty">La contraseña es requerida</string>
+    <string name="personExist">¡El correo electrónico que se ingreso ya existe, si no recuerda su contraseña por favor ingresar a recuperar contraseña para recuperarla!</string>
+    <string name="errorLog">El correo electrónico o la contraseña no son validos</string>
+    <string name="noPatients">Ningún paciente</string>
+    <string name="messageWelcomeLog">Bienvenido </string>
+    <string name="mainAll">Todo</string>
+    <string name="mainToday">Hoy</string>
+    <string name="mainWeek">Semana</string>
+    <string name="mainMonth">Mes</string>
+    <string name="addPatientTitle">Nuevo Paciente</string>
+    <string name="editPatientTitle">Editar Paciente</string>
+
+    <string name="namePatient">Nombre completo (requerido)</string>
+    <string name="genderPatient">Genero</string>
+    <string name="dateBirthPatient">Fecha de nacimiento</string>
+    <string name="template">Tipo de paciente (Plantilla)</string>
+    <string name="templateGeneral">General</string>
+    <string name="templateEdit">Tipo de paciente -no modificable (Plantilla)</string>
+    <string name="birthdayDate">Fecha de nacimiento</string>
+    <string name="phonePatient">Teléfono</string>
+    <string name="emailPatinet">Correo electrónico</string>
+    <string name="dialogRecord">¿Desea ingresar el expediente clínico ahora? (es posible ingresarlo mas tarde)</string>
+    <string name="addPatientOk">El paciente se ingreso correctamente</string>
+    <string name="dialogRecordYes">¡Ingresar información de expediente clínico!</string>
+    <string name="dialogRecordNo">¡La información de expediente clínico no se ingreso!</string>
+    <string name="patientNameRequired">¡El nombre del paciente es requerido!</string>
+    <string name="ageLabel">Edad: </string>
+    <string name="yes">si</string>
+    <string name="no">no</string>
+    <string name="searchHint">ingresar nombre</string>
+    <string name="emailNoValid">¡El correo electrónico no es valido!</string>
+    <string name="phoneNumberInvalid">¡Número de teléfono no valido!</string>
+    <string name="appointmentDateLabel">Fecha de la cita</string>
+    <string name="appointmentTimeLabel">Hora de la cita</string>
+    <string name="appointmentCommentsLabel">Comentarios</string>
+    <string name="labelAppointment">Tiene cita: </string>
+    <string name="dateTimeFormat">dd/MM/yyyy HH:mm</string>
+    <string name="dateTimeFormatShort">dd/MM/yyyy</string>
+    <string name="timeFormat">HH:mm</string>
+    <string name="dateTimeFormatStatus">dd/MM/yyyy HH:mm:ss</string>
+
+    <string name="preferencesSyncTitle">Realizar sincronización</string>
+    <string name="preferencesSyncSummary">Conectarse con el servicio de Internet para respaldar información (este servicio puede generar costos de conexión a Internet)</string>
+    <string name="preferencesNotificationsTitle">Enviar notificaciones de citas</string>
+    <string name="preferencesNotificationsSummary">Informar con notificaciones antes de las citas</string>
+    <string name="appointmentTitle">Cita</string>
+    <string name="appointmentNotificationTitle">Cita con</string>
+    <string name="appointmentNotificationPatientName">Tiene cita con:</string>
+    <string name="appointmentNotificationDate">cita: </string>
+    <string name="appointmentCalendarTitle">Visita de </string>
+    <string name="appointmentCalendarLocation">Consultorio</string>
+    <string name="patientShowName" >Nombre</string>
+    <string name="patientShowGender" >Genero</string>
+    <string name="patientShowType" >Tipo de paciente</string>
+    <string name="patientShowAge" >Edad</string>
+    <string name="patientShowDateBirth" >Fecha de nacimiento</string>
+    <string name="patientShowPhone" >Teléfono</string>
+    <string name="patientShowEmail" >Correo electrónico</string>
+    <string name="deletePatientDialog">¿Eliminar el paciente?</string>
+    <string name="deletePatientDialogOk">¡El paciente fue borrado correctamente!</string>
+
+    <string name="editPatientOK">¡El paciente se modifico correctamente!</string>
+    <string name="addPatientOK">¡El paciente se agrego correctamente!</string>
+
+    <string name="visitTitle">VISITAS</string>
+    <string name="visitDateLabel">Fecha de la visita</string>
+    <string name="visitTimeLabel">Hora de la Visita</string>
+    <string name="diagnosticVisitLabel">Diagnostico</string>
+    <string name="drugsVisitLabel">Medicamentos a tomar</string>
+    <string name="commentVisitLabel">Comentarios adicionales</string>
+    <string name="visitEmpty">No hay visitas</string>
+    <string name="visitOK">La visita se guardo correctamente</string>
+    <string name="deleteVisitDialog">¿Eliminar la visita?</string>
+    <string name="deleteVisitDialogOk">¡La visita se elimino correctamente!</string>
+    <string name="medicalRecords">Expediente clínico</string>
+
+    <string name="templateFirstGroup">Llego al primer grupo</string>
+    <string name="templateLastGroup">No hay mas grupos por mostrar</string>
+    <string name="templateInfo">Tipo de paciente permite gestionar la información que se ingresa de los pacientes, por platillas (próximamente modificaciones disponibles para los usuarios con el servicio de nube)</string>
+    <string name="templateInfoTitle">Tipo de paciente (plantillas)</string>
+
+    <string name="syncPersonOk">Se ha realizado su registro en el servidor de sincronización de forma correcta</string>
+    <string name="syncPersonError">No fue posible realizar su registro en el servidor de sincronización, se intentara mas tarde, puede ser necesario contar con conexión a Internet</string>
+    <string name="syncPersonErrorService">Falla en el servicio de registro para la sincronización del servidor, no fue posible realizar el registro en los servidores de sincronización se intentara nuevamente mas tarde</string>
+
+    <string name="syncCorrect">La sincronización se realizo de forma correcta: </string>
+    <string name="syncNoCorrect">Error el sincronizar: </string>
+    <string name="syncNoConnection">Es necesario tener conexión a internet para respaldo, sincronización entre dispositivos y servicio de nube</string>
+    <string name="syncInsertPatient">Se ingreso por sincronización de forma correcta el paciente:</string>
+    <string name="syncInsertPatientValue">Se ingreso por sincronización de forma correcta la información del paciente:</string>
+    <string name="syncInsertVisit">Se ingreso por sincronización de forma correcta la información de visita del paciente:</string>
+
+    <string name="syncLoginNoConnect">¡No fue posible buscar el usuario en Internet, es necesaria conexión de datos!</string>
+    <string name="syncLogin">¡Se ingreso el usuario desde Internet, los datos fueron sincronizados!</string>
+    <string name="syncLoginProcess">¡Realizando ingreso desde Internet, y sincronizando información de pacientes por favor espere!</string>
+    <string name="syncLoginError">¡Ocurrió un error mientras se realizaba el ingreso desde Internet, por favor intentar mas tarde!</string>
+    <string name="syncLoginNoExists">¡El usuario o contraseña no son correctos, puede recuperar su contraseña si no la recuerda, o registrarse, si no se encuentra registrado!</string>
+    <string name="syncLoginNoExistsNoconnect">¡El usuario o contraseña no son correctos, no tiene conexión a Internet para verificar su usuario!</string>
+
+    <string name="syncOff">Se encuentra apagada la sincronización desde las preferencias de la aplicación, esto evitara realizar la sincronización de Internet, y los respaldos no se realizaron, ni se podrá compartir información entre dispositivos, encienda la sincronización, si desea hacer esto.</string>
+
+    <string name="loginMsgTitle">¡Ingresando!</string>
+    <string name="loginMsg">¡Comprobando correo y contraseña, por favor espere!</string>
+
+    <string name="registerExistsTitle">¡Aviso!</string>
+    <string name="registerExistsMsg">¡El correo electrónico ya esta registrado!, puede ingresar con este correo, si no recuerda la contraseña por favor oprimir recuperar contraseña.</string>
+
+    <string name="messageListAll">Todos los pacientes</string>
+    <string name="messageListToday">Pacientes con cita hoy</string>
+    <string name="messageListWeek">Pacientes con cita en la semana</string>
+    <string name="messageListMonth">Pacientes con cita en el mes</string>
+    <string name="messageListSync">Estado del proceso de sincronización</string>
+
+    <string name="recoverOk">Se recupero la contraseña de forma correcta. por favor revisar su bandeja de correo electrónico por la contraseña.</string>
+    <string name="recoverOkShort">Se recupero la contraseña de forma correcta.</string>
+    <string name="recoverErrorDB">Se presento un error al recuperar la contraseña, no fue posible recuperarla db error</string>
+    <string name="recoverErrorSync">Se presento un error al recuperar la contraseña, no fue posible recuperarla sync error</string>
+    <string name="recoverErrorNotExists">El correo electrónico  no se encuentra registrado, por favor registrarse</string>
+    <string name="recoverProcess">¡Recuperando contraseña, por favor espere!</string>
+    <string name="recoverProcessTitle">¡Comunicando con el servidor!</string>
+    <string name="recoverMsgDialog">¡Desea recobrar su contraseña, se enviará la nueva contraseña a su correo electrónico ingresado, necesitara conexión a datos de Internet, vía WIFI o red celular!</string>
+
+    <string name="brand1">Desarrollado por Capetisoft.com</string>
+    <string name="brand2">Soporte técnico en support@capetisoft.com</string>
+
+    <string name="licencingMsgOk">Versión completa</string>
+    <string name="licencingMsgError">Error en verificación de la licencia</string>
+    <string name="licencingVerify">Verificando licencia</string>
+
+    <string name="backupOk">¡Se realizó el respaldo correctamente!</string>
+
+    <string name="unnamed">sin nombre</string>
+
+    <string-array name="PreferenceBrand">
+        <item >support@capetisoft.com</item>
+    </string-array>
+    <string-array name="PreferenceBrandValue">
+        <item>0</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item >Mujer</item>
+        <item >Hombre</item>
+    </string-array>
+    <string-array name="template">
+        <item >General</item>
+    </string-array>
+    <string-array name="PreferencesNotificationsName">
+        <item >Nunca</item>
+        <item >5 minutos antes</item>
+        <item >10 minutos antes</item>
+        <item >15 minutos antes</item>
+        <item >30 minutos antes</item>
+        <item >1 hora antes</item>
+        <item >2 hora antes</item>
+        <item >1 día antes</item>
+        <item >2 días antes</item>
+    </string-array>
+    <string-array name="PreferencesNotificationsValues">
+        <item >no</item>
+        <item >5m</item>
+        <item >10m</item>
+        <item >15m</item>
+        <item >30m</item>
+        <item >1h</item>
+        <item >2h</item>
+        <item >1d</item>
+        <item >2d</item>
+    </string-array>
+    <string-array name="templateSample">
+        <item >sample</item>
+    </string-array>
+    <string name="mostSelectAccount">Disculpe, debe seleccionar una cuenta de correo electrónico o crear una nueva, para el servicio de respaldo.</string>
+    <string name="typeAccount">Por favor ingresar cuenta de correo electrónico (Gmail) para guardar la información de respaldo.</string>
+    <string name="mostTypeAccount">Disculpe, debe ingresar una cuenta de correo electrónico,  para el servicio de respaldo.</string>
+    <string name="backup_log_msg">Para el servicio de respaldo debe ingresar con una cuenta de Google Gmail, por favor ingresar.</string>
+    <string name="backu_singout">Des conectar</string>
+    <string name="anonymous">Anónimo</string>
+    <string name="auth_failded">Error de autenticación.</string>
+    <string name="waitLog">¡Por favor esperar!</string>
+    <string name="last_backup">Último respaldo:</string>
+    <string name="restore_button">Restaurar último respaldo</string>
+    <string name="do_backup">¿Desea realizar el respaldo ahora?</string>
+    <string name="backupSuccess">¡Se realizó el respaldo de forma correcta!</string>
+    <string name="reading_backup">Leyendo...</string>
+    <string name="restore_warning">¡IMPORTANTE, restaurar el respaldo, sobre escribirá toda la información actual con la información del respaldo!, ¿Desea continuar con la restauración?</string>
+    <string name="restore_button_continue">Continuar con la restauración</string>
+    <string name="restoreOk">¡La restauración se realizó correctamente!</string>
+
+    <string name="title_activity_backup">BackupActivity</string>
+    <string name="title_activity_backup_login">BackupLogin</string>
+    <string name="title_activity_backup_restore">BackupRestore</string>
+    <string name="noBackupYet"></string>
+    <string name="buttonCloud">Oprimir el botón de nube, para respaldar</string>
+    <string name="backupError">Error al realizar el respaldo.</string>
+    <string name="restoreError">Error al restaurar</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/spaceForm">
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/templateValue"
+        android:paddingTop="@dimen/spaceForm"
+        android:paddingBottom="@dimen/spaceForm"
+        android:layout_marginTop="@dimen/spaceFormMedium"
+        android:layout_marginBottom="@dimen/spaceFormMedium"
+        android:paddingRight="@dimen/spaceForm"
+        android:paddingLeft="@dimen/spaceForm"
+        android:textOn="@string/yes"
+        android:textOff="@string/no"
+        android:text="Campo de ejemplo"
+        android:showText="true"
+        android:background="@color/backgroudappse"
+        android:elegantTextHeight="true" />
+</LinearLayout>

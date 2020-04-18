@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/patientItem"
+    android:onClick="onVisitShow">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/visitItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listHeightNormal"
+        android:background="@drawable/item_efect"
+        android:orientation="horizontal"
+        android:onClick="onEditVisit">
+
+        <TextView
+            style="@style/itemTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="10/10/2015 23:59"
+            android:id="@+id/visitDateList"
+            android:gravity="center"
+            android:textSize="@dimen/textFormField"
+            android:textColor="@color/normalText"
+            android:layout_weight="3"
+            android:singleLine="true"/>
+        <ImageButton
+            android:layout_height="match_parent"
+            android:id="@+id/deleteVisit"
+            android:src="@drawable/ic_delete_black_36dp"
+            android:layout_marginLeft="@dimen/spaceForm"
+            android:layout_marginRight="@dimen/spaceForm"
+            android:layout_weight="1"
+            android:background="@color/textBlueLight"
+            android:onClick="onDeleteVisit"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

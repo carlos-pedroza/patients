@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/backgroudapp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:id="@+id/itemLetter">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:gravity="center"
+                android:id="@+id/letterGroup"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/backgroudapp"
+                android:background="@color/headEnd"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patientItem"
+            android:clickable="true"
+            android:onClick="onShowPatient">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listHeight"
+                android:background="@drawable/item_efect" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/listHeight"
+                    android:id="@+id/patientIcono"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_person_48"
+                    android:padding="5dp"
+                    android:background="@drawable/item_efect"
+                    android:onClick="onShowPatient" />
+
+                <TextView
+                    style="@style/itemTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Julia yulena Roberts Espinosa de la concepción"
+                    android:id="@+id/namePatient"
+                    android:layout_toRightOf="@+id/patientIcono"
+                    android:layout_alignParentTop="true"
+                    android:textSize="@dimen/textFormField"
+                    android:textColor="@color/normalText"
+                    android:singleLine="true"/>
+                <TextView
+                    style="@style/itemTextExtend"
+                    android:id="@+id/phonePatient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="55-555-55"
+                    android:layout_below="@+id/namePatient"
+                    android:layout_toRightOf="@+id/patientIcono"/>
+                <TextView
+                    style="@style/itemTextExtend"
+                    android:id="@+id/emailPatient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="carlos.pedrozav@gmail.com"
+                    android:layout_below="@+id/phonePatient"
+                    android:layout_toRightOf="@+id/patientIcono" />
+                <TextView
+                    style="@style/itemTextExtend"
+                    android:id="@+id/appointmentPatient"
+                    android:textColor="@color/textGreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20/10/2015 13:30"
+                    android:layout_below="@+id/emailPatient"
+                    android:layout_toRightOf="@+id/patientIcono"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/linearLayout4">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/phoneCall"
+                            android:src="@drawable/ic_call_black_36dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/spaceIcons"
+                            android:background="@color/textBlueLight"
+                            android:onClick="onCallPhone" />
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/appointmentButton"
+                            android:src="@drawable/ic_event_black_36dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/spaceIcons"
+                            android:background="@color/textBlueLight"
+                            android:onClick="onApoointment"/>
+                    </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

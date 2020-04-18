@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/contentMainView"
+    tools:context="com.capetisoft.patients.AddPatient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headwin"
+            android:background="@color/head"
+            android:id="@+id/head">
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton4"
+                android:src="@drawable/ic_arrow_back_white_48dp"
+                android:background="@color/head"
+                android:onClick="onBack"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingBottom="2dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/textFormField"
+            android:textColor="@color/normalText"
+            android:id="@+id/msgBox"
+            android:layout_marginBottom="@dimen/spaceForm"
+            android:visibility="gone" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/spaceForm"
+            android:paddingRight="@dimen/spaceForm">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/textFormSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addPatientTitle"
+                    android:paddingTop="@dimen/spaceForm"
+                    android:id="@+id/textView3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/namePatient"
+                    android:id="@+id/lname"
+                    style="@style/textFormField" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    style="@style/enterFieldFormName" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genderPatient"
+                    android:id="@+id/lgender"
+                    style="@style/textFormField" />
+                <Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:entries="@array/gender"
+                    style="@style/enterFieldFormNameSpinner"/>
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rowCount="1"
+                    android:columnCount="2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/template"
+                        android:id="@+id/ltemplate"
+                        style="@style/textFormField" />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/helpTemplate"
+                        android:src="@drawable/ic_help_black_24dp"
+                        android:layout_marginRight="@dimen/spaceForm"
+                        android:background="@color/backgroudapp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onTemplateInfo"/>
+                </GridLayout>
+                <Spinner
+                    android:id="@+id/template"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:entries="@array/template"
+                    style="@style/enterFieldFormNameSpinner"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/birthdayDate"
+                    android:id="@+id/lbirthdayDate"
+                    style="@style/textFormField" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backGray">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/ageLabel"
+                        android:id="@+id/ageLabel"
+                        style="@style/textFormField"
+                        android:textSize="@dimen/textSize"
+                        android:background="@color/head"
+                        android:textColor="@color/backgroudapp"/>
+                    <DatePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/birthDate"
+                        android:calendarViewShown="false"
+                        android:spinnersShown="true"
+                        android:datePickerMode="spinner"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phonePatient"
+                    android:id="@+id/lphone"
+                    style="@style/textFormField"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:id="@+id/phonePatient"
+                    style="@style/enterFieldForm" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emailPatinet"
+                    android:id="@+id/lemail"
+                    style="@style/textFormField" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/emailPatient"
+                    style="@style/enterFieldForm" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/back_efect">
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_ok"/>
+
+</android.support.design.widget.CoordinatorLayout>

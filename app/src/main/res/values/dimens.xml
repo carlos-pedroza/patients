@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="headinit">128dp</dimen>
+    <dimen name="headinitv">70dp</dimen>
+    <dimen name="headwin">64dp</dimen>
+    <dimen name="padTop">16dp</dimen>
+    <dimen name="padTopThin">2dp</dimen>
+    <dimen name="padLeft">16dp</dimen>
+    <dimen name="padRight">16dp</dimen>
+    <dimen name="enterField">25dp</dimen>
+    <dimen name="winLogin">400dp</dimen>
+    <dimen name="winMarginTop">39dp</dimen>
+    <dimen name="spaceForm">10dp</dimen>
+    <dimen name="spaceFormMedium">5dp</dimen>
+    <dimen name="spaceIcons">28dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="textSizeMedium">12sp</dimen>
+    <dimen name="textSizeSmall">8sp</dimen>
+    <dimen name="margen_small">5dp</dimen>
+    <dimen name="textFormSubtitle">20sp</dimen>
+    <dimen name="textFormField">16sp</dimen>
+    <dimen name="textFormComment">10sp</dimen>
+    <dimen name="editPaddin">3dp</dimen>
+    <dimen name="dialogYesNoTop">32dp</dimen>
+    <dimen name="dialogButtonTop">10dp</dimen>
+    <dimen name="textMultilineHe">110dp</dimen>
+    <dimen name="listHeight">82dp</dimen>
+    <dimen name="listHeightNormal">72dp</dimen>
+    <dimen name="textWidthShort">150dp</dimen>
+    <dimen name="widthSwitchValue">50dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

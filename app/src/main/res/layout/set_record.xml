@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padRight"
+    android:paddingRight="@dimen/padLeft"
+    android:background="@color/backgroudapp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/dialogRecord"
+        android:textColor="@color/normalText"
+        android:id="@+id/textView4"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dialogYesNoTop"
+        android:paddingLeft="@dimen/padLeft"
+        android:paddingRight="@dimen/padRight"
+        android:layout_marginBottom="@dimen/dialogYesNoTop" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        android:id="@+id/button"
+        android:layout_marginTop="@dimen/dialogButtonTop"
+        android:onClick="onSetYes"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no"
+        android:id="@+id/button2"
+        android:layout_marginTop="@dimen/dialogButtonTop"
+        android:onClick="onSetNo" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/show_title_switch_yes"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template title"
+            android:id="@+id/templateTitle"
+            android:textColor="@color/normalText"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="@dimen/widthSwitchValue"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="si"
+            android:gravity="center"
+            android:id="@+id/templateValue"
+            style="@style/showValueSwitch_yes"/>
+    </FrameLayout>
+</LinearLayout>

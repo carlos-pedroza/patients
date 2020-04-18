@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">Medical Agenda</string>
+    <string name="registerActivity">Registration</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuration</string>
+    <string name="patientName">Patients</string>
+    <string name="patientLabel">Patient</string>
+    <string name="login_correo">Your name</string>
+    <string name="login_password">Password</string>
+    <string name="registerButton">Register</string>
+    <string name="loginButton">GET IN</string>
+    <string name="recoverButton">Recover password</string>
+    <string name="subtitleLogin">(Registration required)</string>
+    <string name="rememberText">Remember password</string>
+    <string name="registerTitle">Register Service</string>
+    <string name="registerComment">You must configure access to the service to start, to protect your information. You must provide your valid e-mail, and set a new password, which will be used to access the application onwards \ n. Note: You can share information between devices using the same email and password (internet connection required).</string>
+    <string name="textFieldNameRegister">Full Name (required)</string>
+    <string name="emailRegister">Email (required)</string>
+    <string name="emailRegisterConfirm">Confirm Email (required)</string>
+    <string name="passwordRegister">Password (required)</string>
+    <string name="passwordRegisterConfirm">Confirm Password (required)</string>
+    <string name="language">1</string>
+    <string name="passwordNotEqual">The password confirmation does not match please check</string>
+    <string name="emailNotEqual">Email confirmation does not match please check</string>
+    <string name="messageRegisterDo">Performing record!</string>
+    <string name="messageRegisterDone">Registration was successful!</string>
+    <string name="messageRegisterDoneNoSync">The record was successful, but could not be updated in sync server, data connection required!</string>
+    <string name="nameEmpty">The name is required</string>
+    <string name="emailEmpty">Email is required</string>
+    <string name="passwordEmpty">The password is required</string>
+    <string name="personExist">¡Email that was entered already exists, you do not remember your password, please enter password to retrieve it back!</string>
+    <string name="errorLog">The email or password is invalid</string>
+    <string name="noPatients">no patient</string>
+    <string name="messageWelcomeLog">Welcome </string>
+    <string name="mainAll">All</string>
+    <string name="mainToday">Today</string>
+    <string name="mainWeek">Week</string>
+    <string name="mainMonth">Month</string>
+    <string name="addPatientTitle">Add Patient</string>
+    <string name="editPatientTitle">Edit Patient</string>
+
+    <string name="namePatient">Full name (required)</string>
+    <string name="genderPatient">Gender</string>
+    <string name="dateBirthPatient">Birthdate</string>
+    <string name="template">Patient type (template)</string>
+    <string name="templateGeneral">General</string>
+    <string name="templateEdit">patient type (template) -unchangeable</string>
+    <string name="birthdayDate">Birthdate</string>
+    <string name="phonePatient">Phone</string>
+    <string name="emailPatinet">Email</string>
+    <string name="dialogRecord">Do you want to enter the clinical record now? (may submit later)</string>
+    <string name="addPatientOk">The patient was entered correctly</string>
+    <string name="dialogRecordYes">Enter information of clinical record!</string>
+    <string name="dialogRecordNo">The medical record information is not income!</string>
+    <string name="patientNameRequired">The patient name is required!</string>
+    <string name="ageLabel">Age: </string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="searchHint">enter name</string>
+    <string name="emailNoValid">The email is not valid!</string>
+    <string name="phoneNumberInvalid">Phone number not valid!</string>
+    <string name="appointmentDateLabel">Date of appointment</string>
+    <string name="appointmentTimeLabel">Appointment Time</string>
+    <string name="appointmentCommentsLabel">Reviews</string>
+    <string name="labelAppointment">have an appointment:</string>
+    <string name="dateTimeFormat">MM/dd/yyyy HH:mm</string>
+    <string name="dateTimeFormatShort">MM/dd/yyyy</string>
+    <string name="timeFormat">HH:mm</string>
+    <string name="dateTimeFormatStatus">MM/dd/yyyy HH:mm:ss</string>
+
+    <string name="preferencesSyncTitle">perform synchronization</string>
+    <string name="preferencesSyncSummary">Connect to the Internet service to backup information (this service can generate Internet connection costs)</string>
+    <string name="preferencesNotificationsTitle">Send notifications of appointments</string>
+    <string name="preferencesNotificationsSummary">Send notifications before appointments</string>
+    <string name="appointmentTitle">Appointment</string>
+    <string name="appointmentNotificationTitle">Appointment with</string>
+    <string name="appointmentNotificationPatientName">You have an appointment with:</string>
+    <string name="appointmentNotificationDate">Appointment: </string>
+    <string name="appointmentCalendarTitle">Visit </string>
+    <string name="appointmentCalendarLocation">Office of Doctor</string>
+    <string name="patientShowName">Name</string>
+    <string name="patientShowGender">Gender</string>
+    <string name="patientShowType">Patient type</string>
+    <string name="patientShowAge">Age</string>
+    <string name="patientShowDateBirth">Birthdate</string>
+    <string name="patientShowPhone">Phone</string>
+    <string name="patientShowEmail">Email</string>
+    <string name="deletePatientDialog">Are you sure to delete the patient?</string>
+    <string name="deletePatientDialogOk">The patient was successfully deleted!</string>
+
+    <string name="editPatientOK">The patient was successfully changed!</string>
+    <string name="addPatientOK">The patient was successfully added!</string>
+
+    <string name="visitTitle">VISITS</string>
+    <string name="visitDateLabel">Date of visit</string>
+    <string name="visitTimeLabel">Time of Visit</string>
+    <string name="diagnosticVisitLabel">Diagnosis</string>
+    <string name="drugsVisitLabel">Drugs to take</string>
+    <string name="commentVisitLabel">Additional comments</string>
+    <string name="visitEmpty">No visits</string>
+    <string name="visitOK">The visit was successfully saved</string>
+    <string name="deleteVisitDialog">Are you sure to delete the visit?</string>
+    <string name="deleteVisitDialogOk">The visit was removed successfully!</string>
+    <string name="medicalRecords">Medical records</string>
+
+    <string name="templateFirstGroup">Came the first group</string>
+    <string name="templateLastGroup">No more groups show</string>
+    <string name="templateInfo">Patient type can manage the information entered for the patient, this with templates (coming soon, you can add templates, with the cloud service)</string>
+    <string name="templateInfoTitle">Patient type (templates)</string>
+
+    <string name="syncPersonOk">It has made its server log sync correctly</string>
+    <string name="syncPersonError">It was not possible to make registering on the synchronization server, it tries later it may be necessary to have internet connection</string>
+    <string name="syncPersonErrorService">Failure registration service for server synchronization was not possible to check in synchronization servers try again later</string>
+
+    <string name="syncCorrect">Synchronization is performed correctly:</string>
+    <string name="syncNoCorrect">Failed to synchronize:</string>
+    <string name="syncNoConnection">You need to have internet connection for backup, synchronization between devices and cloud service</string>
+    <string name="syncInsertPatient">Synchronization is income from patient correctly:</string>
+    <string name="syncInsertPatientValue">Income synchronization is correctly patient information:</string>
+    <string name="syncInsertVisit">Income is properly synchronization information patient visit:</string>
+
+    <string name="syncLoginNoConnect">It was not possible to search the Internet user, it is necessary connection data!</string>
+    <string name="syncLogin">The user is entered from the Internet, the data was synchronized!</string>
+    <string name="syncLoginProcess">Perform income from the Internet, patient information and synchronizing please wait!</string>
+    <string name="syncLoginError">An error occurred while income was realized from the Internet, please try again later!</string>
+    <string name="syncLoginNoExists">The user or password are not correct, you can recover your password if you do not remember, or register if you are not registered!</string>
+    <string name="syncLoginNoExistsNoconnect">The user or password are not correct, no Internet connection to check your email!</string>
+
+    <string name="syncOff">Is off the synchronization from the application preferences, this will avoid synchronizing the Internet, and backups were not performed, nor may share information continues between devices, power synchronization, if you want to do this.</string>
+
+    <string name="loginMsgTitle">Login!</string>
+    <string name="loginMsg">Checking email and password, please wait!</string>
+
+    <string name="registerExistsTitle">Notice!</string>
+    <string name="registerExistsMsg">Email already registered !, may login with this email, if you do not remember the contarseña please press recover password.</string>
+
+    <string name="messageListAll">All patients</string>
+    <string name="messageListToday">Patients with appointment today</string>
+    <string name="messageListWeek">Patients by appointment during the week</string>
+    <string name="messageListMonth">Patients with an appointment in the month</string>
+    <string name="messageListSync">Status of the synchronization process</string>
+
+    <string name="recoverOk">The password is recovered successfully. Please check your email inbox for the password.</string>
+    <string name="recoverOkShort">The password is recovered successfully.</string>
+    <string name="recoverErrorDB">Failed to recover the password was not possible to retrieve db Error</string>
+    <string name="recoverErrorSync">Failed to recover the password was not possible to retrieve sync Error</string>
+    <string name="recoverErrorNotExists">The email is not registered, please register</string>
+    <string name="recoverProcess">Recovering password, please wait!</string>
+    <string name="recoverProcessTitle">Communicating with the server!</string>
+    <string name="recoverMsgDialog">Want to recover your password, the new password will be sent to your email inbox, you need data connection to the Internet via WiFi or cellular network!</string>
+
+    <string name="brand1">Developed by Capetisoft.com</string>
+    <string name="brand2">technical support at support@capetisoft.com</string>
+
+
+    <string name="licencingMsgOk">Complete Version</string>
+    <string name="licencingMsgError">Error in license verification</string>
+    <string name="licencingVerify">Verifying license</string>
+
+    <string name="backupOk">The backup was successful!</string>
+
+    <string name="unnamed">unnamed</string>
+
+    <string-array name="PreferenceBrand">
+        <item>support@capetisoft.com</item>
+    </string-array>
+    <string-array name="PreferenceBrandValue">
+        <item>0</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Woman</item>
+        <item>Man</item>
+    </string-array>
+    <string-array name="template">
+        <item>General</item>
+    </string-array>
+    <string-array name="PreferencesNotificationsName">
+        <item>Never</item>
+        <item>5 minutes before</item>
+        <item>10 minutes before</item>
+        <item>15 minutes before</item>
+        <item>30 minutes before</item>
+        <item>1 hour before</item>
+        <item>2 hours before</item>
+        <item>1 day before</item>
+        <item>2 days before</item>
+    </string-array>
+    <string-array name="PreferencesNotificationsValues">
+        <item>no</item>
+        <item>5m</item>
+        <item>10m</item>
+        <item>15m</item>
+        <item>30m</item>
+        <item>1h</item>
+        <item>2h</item>
+        <item>1d</item>
+        <item>2d</item>
+    </string-array>
+    <string-array name="templateSample">
+        <item>sample</item>
+    </string-array>
+    <string name="title_activity_backup">BackupActivity</string>
+    <string name="mostSelectAccount">Sorry, you must select an email account or create a new one to the backup service.</string>
+    <string name="typeAccount">Please enter email account (Gmail) to save the backup information.</string>
+    <string name="mostTypeAccount">Sorry, you must enter an email account for the backup service.</string>
+    <string name="title_activity_backup_login">BackupLogin</string>
+    <string name="backup_log_msg">For backup service must enter a Google Gmail account, please login.</string>
+    <string name="backu_singout">Sign Out</string>
+    <string name="anonymous">anonymous</string>
+    <string name="auth_failded">Authentication failed.</string>
+    <string name="waitLog">Please wait!</string>
+    <string name="last_backup">Last backup:</string>
+    <string name="restore_button">Restore last backup</string>
+    <string name="do_backup">Do you want to perform the backup now?</string>
+    <string name="backupSuccess">Backup was successful!</string>
+    <string name="title_activity_backup_restore">BackupRestore</string>
+    <string name="reading_backup">Reading...</string>
+    <string name="restore_warning">IMPORTANT, restore the backup, wrote about all current information with information from backup!, Proceed with the restoration?</string>
+    <string name="restore_button_continue">Continue with the restoration</string>
+    <string name="restoreOk">The restoration was successful!</string>
+    <string name="noBackupYet"></string>
+    <string name="buttonCloud">Press the button cloud, to back up</string>
+    <string name="backupError">Failed to perform the backup.</string>
+    <string name="restoreError">Failed to restore</string>
+</resources>

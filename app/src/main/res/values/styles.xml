@@ -1,0 +1,192 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- Base application theme. -->
+    <!--style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+    </style-->
+    <style name="enterField">
+        <item name="android:background">@color/enterField</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/normalText</item>
+    </style>
+
+    <style name="winLogin">
+        <item name="android:background">@color/backgroudapp_medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">@dimen/padTop</item>
+        <item name="android:paddingBottom">@dimen/padTop</item>
+        <item name="android:paddingLeft">@dimen/padLeft</item>
+        <item name="android:paddingRight">@dimen/padRight</item>
+        <item name="android:layout_marginTop">@dimen/margen_small</item>
+        <item name="android:layout_marginLeft">@dimen/margen_small</item>
+    </style>
+
+    <style name="textForm">
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:layout_marginBottom">@dimen/spaceForm</item>
+        <item name="android:layout_marginTop">@dimen/spaceForm</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:background">@color/button</item>
+        <item name="android:paddingTop">@dimen/padTopThin</item>
+        <item name="android:paddingBottom">@dimen/padTopThin</item>
+        <item name="android:paddingLeft">@dimen/padLeft</item>
+        <item name="android:paddingRight">@dimen/padRight</item>
+        <item name="android:layout_marginTop">@dimen/margen_small</item>
+        <item name="android:textColor">@color/normalText</item>
+    </style>
+
+    <style name="buttonMain">
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+        <item name="android:background">@color/buttonMain</item>
+        <item name="android:paddingTop">@dimen/padTopThin</item>
+        <item name="android:paddingBottom">@dimen/padTopThin</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="textFormSubtitle">
+        <item name="android:textSize">@dimen/textFormSubtitle</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textFormField">
+        <item name="android:textSize">@dimen/textFormField</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:layout_marginTop">@dimen/spaceForm</item>
+        <item name="android:layout_marginBottom">@dimen/spaceForm</item>
+    </style>
+
+    <style name="textFormComment">
+        <item name="android:textSize">@dimen/textFormComment</item>
+        <item name="android:textColor">@color/textComment</item>
+    </style>
+
+    <style name="enterFieldFormName">
+        <item name="android:background">@drawable/border_edit</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:capitalize">words</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/editPaddin</item>
+        <item name="android:paddingBottom">@dimen/editPaddin</item>
+    </style>
+
+    <style name="enterFieldForm">
+        <item name="android:background">@drawable/border_edit</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:capitalize">sentences</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/editPaddin</item>
+        <item name="android:paddingBottom">@dimen/editPaddin</item>
+    </style>
+
+    <style name="itemTextName">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">2dp</item>
+    </style>
+
+    <style name="itemTextExtend">
+        <item name="android:textColor">#434445</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">2dp</item>
+    </style>
+
+    <style name="enterFieldFormNameSpinner">
+        <item name="android:background">@drawable/spinner</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:capitalize">words</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/editPaddin</item>
+        <item name="android:paddingBottom">@dimen/editPaddin</item>
+    </style>
+
+    <style name="showTitle">
+        <item name="android:background">@drawable/show_title</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="showValue">
+        <item name="android:background">@drawable/show_value</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="appointmentSet">
+        <item name="android:textColor">@color/backgroudapp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="showTitleSwitch_yes">
+        <item name="android:background">@drawable/show_title_switch_yes</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="showValueSwitch_yes">
+        <item name="android:background">@drawable/show_value_switch_yes</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="showTitleSwitch_no">
+        <item name="android:background">@drawable/show_title_switch_no</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="showValueSwitch_no">
+        <item name="android:background">@drawable/show_value_switch_no</item>
+        <item name="android:textColor">@color/normalText</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="textTableFree">
+        <item name="android:textSize">@dimen/textFormField</item>
+        <item name="android:textColor">@color/normalText</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+</resources>

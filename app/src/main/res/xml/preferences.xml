@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferences_main">
+    <ListPreference
+        android:key="notifications"
+        android:title="@string/brand1"
+        android:summary="@string/brand2"
+        android:entries="@array/PreferenceBrand"
+        android:entryValues="@array/PreferenceBrandValue"
+        android:defaultValue="0"/>
+    <ListPreference
+        android:key="notifications"
+        android:title="@string/preferencesNotificationsTitle"
+        android:summary="@string/preferencesNotificationsSummary"
+        android:entries="@array/PreferencesNotificationsName"
+        android:entryValues="@array/PreferencesNotificationsValues"
+        android:defaultValue="10m"/>
+</PreferenceScreen>

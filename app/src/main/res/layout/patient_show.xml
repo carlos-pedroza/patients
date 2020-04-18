@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/contentMainView"
+    tools:context="com.capetisoft.patients.PatientShow">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroudapp">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headwin"
+            android:background="@color/head"
+            android:id="@+id/head">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backButton"
+                android:src="@drawable/ic_arrow_back_white_48dp"
+                android:background="@color/head"
+                android:onClick="onBack"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showVisitButton"
+                android:src="@drawable/ic_action_drug_prescription_prescribe_white_24"
+                android:background="@color/transparent"
+                android:onClick="onVisitButton"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/showApoointmentButton"
+                android:layout_toStartOf="@+id/showApoointmentButton"
+                android:layout_marginRight="16dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showApoointmentButton"
+                android:src="@drawable/ic_event_white_24dp"
+                android:background="@color/transparent"
+                android:onClick="onApoointmentGo"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/deletePatientButton"
+                android:layout_toStartOf="@+id/deletePatientButton"
+                android:layout_marginRight="16dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deletePatientButton"
+                android:src="@drawable/ic_delete_white_24dp"
+                android:onClick="onDeletePatient"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingBottom="2dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/textFormField"
+            android:textColor="@color/normalText"
+            android:id="@+id/msgBox"
+            android:layout_marginBottom="@dimen/spaceForm"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spaceForm"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableLayout"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="2dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:layout_column="0"
+                        android:src="@drawable/ic_person_48" />
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_column="1"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/nameValue"
+                            android:text="name Value"
+                            style="@style/textTableFree"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView2"
+            android:layout_marginBottom="5dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/layoutPatientShow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="30dp"
+                    android:background="@drawable/view_shadow_group">
+                    <TextView
+                        style="@style/appointmentSet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/appointmentLabel"
+                        android:visibility="gone"
+                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:id="@+id/groupName"
+                        android:text="@string/patientLabel"
+                        style="@style/textFormSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/backgroudapp_medium"/>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/genderTitle"
+                            android:text="@string/patientShowGender"
+                            style="@style/textTableFree"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:gravity="right"
+                            android:layout_marginBottom="2dp"/>
+                        <TextView
+                            android:id="@+id/genderValue"
+                            android:text="gender Value"
+                            style="@style/textTableFree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/normalText"
+                            android:background="@drawable/show_title"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/typeTitle"
+                            android:text="@string/patientShowType"
+                            style="@style/textTableFree"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:gravity="right"
+                            android:layout_marginBottom="2dp"/>
+                        <TextView
+                            android:id="@+id/typeValue"
+                            android:text="Type Value"
+                            style="@style/textTableFree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/normalText"
+                            android:background="@drawable/show_title"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/ageTitle"
+                            android:text="@string/patientShowAge"
+                            style="@style/textTableFree"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:gravity="right"
+                            android:layout_marginBottom="2dp"/>
+                        <TextView
+                            android:id="@+id/ageValue"
+                            android:text="Age Value"
+                            style="@style/textTableFree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/normalText"
+                            android:background="@drawable/show_title"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/dateBirthTitle"
+                            android:text="@string/patientShowDateBirth"
+                            style="@style/textTableFree"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:gravity="right"
+                            android:layout_marginBottom="2dp"/>
+                        <TextView
+                            android:id="@+id/dateBirthValue"
+                            android:text="Date Birth Value"
+                            style="@style/textTableFree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/normalText"
+                            android:background="@drawable/show_title"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/phoneTitle"
+                            android:text="@string/patientShowPhone"
+                            style="@style/textTableFree"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:gravity="right"
+                            android:layout_marginBottom="2dp"/>
+                        <TextView
+                            android:id="@+id/phoneValue"
+                            android:text="Phone Value"
+                            style="@style/textTableFree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/normalText"
+                            android:background="@drawable/show_title"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/emailTitle"
+                            android:text="@string/patientShowEmail"
+                            style="@style/textTableFree"
+                            android:layout_width="115dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:gravity="right"
+                            android:layout_marginBottom="2dp"/>
+                        <TextView
+                            android:id="@+id/emailValue"
+                            android:text="Email Value"
+                            style="@style/textTableFree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/normalText"
+                            android:background="@drawable/show_title"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_edit"/>
+</android.support.design.widget.CoordinatorLayout>

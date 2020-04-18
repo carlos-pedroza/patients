@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/spaceForm">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo Campo"
+        android:layout_marginTop="@dimen/spaceForm"
+        android:id="@+id/templateLabel"
+        style="@style/textFormField" />
+    <EditText
+        android:layout_width="@dimen/textWidthShort"
+        android:layout_height="wrap_content"
+        android:id="@+id/templateValue"
+        style="@style/enterFieldFormName"/>
+</LinearLayout>

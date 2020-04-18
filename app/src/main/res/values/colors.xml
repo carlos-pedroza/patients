@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroudapp">#edfffd</color>
+    <color name="backgroudapp_medium">#489eb0ae</color>
+    <color name="backgroudappse">#e3f5f3</color>
+    <color name="backGray">#dce3f1</color>
+    <color name="head">#607D8B</color>
+    <color name="normalText">#05011f</color>
+    <color name="headEnd">#455A64</color>
+    <color name="button">#56f3ff</color>
+    <color name="button2">#73cdff</color>
+    <color name="buttonMain">#bac5daf7</color>
+    <color name="enterField">#fffff5</color>
+    <color name="textComment">#3f3f3f</color>
+    <color name="messageOk">#68ffa5</color>
+    <color name="messageWaning">#f9ffb1</color>
+    <color name="messageError">#ff8c80</color>
+    <color name="itemColor">#e8f9ee</color>
+    <color name="itemSpace">#75aaf7</color>
+    
+    <color name="transparent">#00000000</color>
+    <color name="primary_text_default_material_dark">#120808</color>
+    <color name="primary_text_material_dark">#0d111f</color>
+    <color name="primary_material_dark">#101322</color>
+    <color name="dialogBackgroud">#6e000000</color>
+    <color name="textGreenLight">#2ac11a</color>
+    <color name="textGreen">#16660e</color>
+    <color name="textBlueLight">#e0f2f9</color>
+    <color name="iceCube">#01B1AE</color>
+    <color name="dandelionSeed">#2E1A47</color>
+    <color name="floorGreen">#40C1AC</color>
+    <color name="blueMacawFeathers">#1f2a44</color>
+
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#448AFF</color>
+    <color name="textIcons">#FFFFFF</color>
+
+</resources>
